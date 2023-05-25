@@ -25,6 +25,7 @@ type Recipe struct {
 }
 
 func main() {
+
 	logger := slog.New(slog.NewTextHandler(os.Stderr, nil))
 
 	openaiApiKey, ok := os.LookupEnv("OPENAI_API_KEY")
